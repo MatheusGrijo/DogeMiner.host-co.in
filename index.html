@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DogeMiner.host-co.in</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+
+  body{
+    overflow-x: hidden;
+  }
+
+  h2{
+    font-size: 20px;
+    font-weight: bold;
+    color:#f4511e;
+  }
+  
+.users{
+  padding: 10px;
+}
+
+.faq{
+  padding: 50px;
+}
+
+.jumbotron { 
+    background-color: #f4511e; /* Orange */
+    color: #ffffff;
+}
+
+.jumbotrong { 
+    background-color: #45E94E; /* Orange */
+    color: #ffffff;
+}
+
+.navbar {
+      margin-bottom: 0;
+      background-color: #f4511e;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+
+  footer  {
+      font-size: 15px;      
+      color: #fff;
+      background-color: #f4511e;
+      padding: 20px;
+      padding-left: 300px;
+  }
+
+  .lege{
+    font-size: 16px;
+  }
+
+  .pad{
+    padding: 100px;
+  }
+
+  a{
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  a:hover{
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .padd{
+    padding: 10px;
+  }
+
+  .ady{
+    padding-right: 150px;
+    padding-left: 150px;
+  }
+</style>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">DogeMiner.host-co.in</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+       <li><a href="#faq">FAQ\HELP</a></li>
+        <li><a href="#services">Last Withdrawal</a></li>
+        <li><a href="#portfolio">Top Miner Users</a></li>
+        <li><a href="#pricing">Last Users</a></li>
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center pad">
+
+  <img src="http://dogecoin.com/imgs/dogecoin-300.png" width="200px" height="200px"><br/>
+  <h1>DogeMiner.host-co.in</h1> 
+  <p>Dogecoin Mining: fast, secure and free!</p> 
+  <h4>*Automatic payments over 5 dogecoin.</h4>
+<br>
+
+  <form class="form-inline padd">
+    <div class="input-group">
+      <input type="email" class="form-control" id="wallet" name="wallet" size="40" placeholder="Your wallet Dogecoin" required>
+      <div class="input-group-btn">
+      
+              <button type="button" id="btn" name="btn" class="btn btn-success" onclick="javascript:miner()">Miner NOW!</button>
+ 
+      </div>
+    </div>
+  </form>
+  <i class="lege">Don't have a dogecoin wallet yet?<a href="https://my.dogechain.info" target="_blank" style="color: #fff"> Click here!</a></i>
+</div>
+
+
+<div class="hash text-center">
+  
+ <div id="detail">
+ </div>
+ 
+</div>
+
+
+<div class="jumbotrong text-center">
+  
+ <div id="balance">
+ </div>
+ 
+</div>
+
+
+<div class="lastwithdrawal text-center">
+  <h2>LAST WITHDRAWAL</h2> 
+ <div id="divwithdrawal">
+ </div>
+ 
+</div>
+
+<div class="users text-center">
+  
+ <div class="row">
+    <div class="col-sm-6" id="divtop"></div>
+    
+    <div class="col-sm-6" id="divlast"></div>
+  </div>
+
+</div>
+
+
+
+<div class="faq" id="faq">
+
+  <div class="row ady">
+    <div class="col-md-12 text-center">
+    <h2>FAQ\HELP</h2><Br>
+
+      <b>Hello and welcome to the best, fastest and safest dogecoin miner gives web :)</b><Br><Br>
+
+      <p>Our miner works in parallel with Monero, and we do the instantaneous withdrawals as soon as you get the value of 5 or more dogecoin.</p>
+
+      <p>This miner has been developed with a lot of affection, for people who are starting in the world of cryptocurrency, so enjoy and win your first dogecoin or increase your wallet!</p>
+
+    </div>
+</div>
+
+<br><br><br><br>
+
+<div class="row ady">
+
+
+
+  <div class="col-md-12"> <h2>Steps to use</h2><Br><Br>
+
+  <div class="row">
+
+  <div class="col-md-4 text-center">
+
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAxiSURBVHhe7Z0JbBTXGcfTW62qVm1VtWp6qIeqRj3UFqmteoTiXRuzuzZ4Zxdjk0DCfUUEcCAh2A42xhcYDOVyCDeC4hBKAgHKlQhIIIZwBALmxjdgG1gfeG3vfn3f+BnvzHw7O7trm3X6/tJPCM/73rz3/XfmvTczO/tEJMtsdn7TZLX/zBQr/SHG6uxnGpT4yyir40m+OZA+h2VjbPZfybGsDqwrNnb4N/h2IT2lp6d/PnqQ/W9miyONsd9kdVSZrQ6gMFmlRsZJs1VaxpLuQONiYhzfjrZIz5gt0iq27TT7t5mKRUwWqbJjH1LqAIv0V9w3b4aQ2eb8MUt+DktSGZU8Y0gellwPvS0wbN+3WHx2zODEH/Fm/f+pf2zCD9mn9A2WDDeVpMdBR1uk1UGcFvu+nE7nF9jpJIXRQCUlImBtY+ZMw7byZn821d/i/D7r8CFNAlRE25zw3OhnIW3OeFi2aCqsWTEdNhTNgJVLXoTseZNg8gujwJqQSMb6YhnshPTUCbDh9RS5Dqwr9dXxct24DypGxSFsM2/+Z0vRFufv9QbqaJsDXkoZA3uKZ8PtC/nQUr5Yl4YbBVBycC6kzBgNMXF0nQgmftPqFE18zaf58r5S2D5x31Qswo6Uyqg46Xe8G58NRVmlf7Dx4h7VYUxG9rzJcLUkW5M0o9y/WgBb1s0EKSlJU38nKwqnkrEI7nt+5iT/xrC2Yx94d/q2TIMcv2UD5X2qo2PHjYRzRzPJJIVC7eUFsCBninxUUPtbu3IGGdfJ2SPz5DZRsdgH7AvvVt+UOX7YD9gAWUN1cGHuFHBdLyATEy6Hd6VCvESPMbu3zSZjOsE25WdPIWMZ5X12TMEZCjv/vqfulL9zenfz6QdZ4ExKVuwbwclA6UfzyRhfsI1+jrRDfXL2xY6MWURnYCOb8VAJ6AkuHZ8PCUO148q4CSOh6eYiMsYXbKs6ljODd7NvqGP1LTWqO7Iw9wWy4z3Jx+9lwMB47Sd92/qZZHk1edmTNbG4TulTi0fW4PXqTuCnEqeqVKf1KYTW2t3Qdu8QtFSuILYHBk8/6vYMcQ6D+isLyfK+4Jgydvxzmnhc0fPuRrai4xw/ZQ1u8218TJwTzh+bR3Y4EO0PjkOnvK132d+WaMoEovnWIvkD4dsmBBeMVHk1nxydp5kS42WWARb7T3i3I1ds8Zfv23Akb/5ksqN6uKvXg6eplLnQzu3okMddDa13iskYPU4dmqtoEzI0OVk2iyqvJoetldTx7EyQy7vdO2KziS9HDXJEm2yO6awBBawBq/QwWeyvs0VUk2+j8fx94+McspP+cN/ewjLfwi2g5IW2+gNkrB5TXxytTCjj2N50sqya66eyNWMRjpPsyCmicqGPIy0qbtj3eJoDy2pN/lbHJ51e0AXDKy+PJTvol4ol4G27zxOvI68H3DWb6Dr8sH/Hq5r25WYZP3pfnjVWEx8q7JR33WazfY2n3L/MNsnEHKylKgmFfSwJVOf80Vr3Ls+4jzwP2ZnLxf/TpfaGM2Qd/sABWr1gTB7xDFmWYu92raHhwI6wf/K002KHUxIrqBiQwwEHwtrSBWTn/NHeeI6nu0PtrlOPtuFMy1ee5suKWCPMfmWcpp1lZ3LJsmruXsrXDO5h4I2Jc/yCp14rNq/+EzPE723PUBgzbgTZMT3amy7ydHeo9c52n+2F7GC52bGBjTGhDO5b1r6kaeeRd42NI8joMSM08UGDebZIKTz1WuE9ZXaaOqsOxEsHr2Xlw4cnSqCyqgYaGhr9gtvV8ZmvTSQ7pUe762RHwrk8TZfAXblKUcZdvYaNNcsVfzPK0T1pmnaiSVRZioy0CZr46urbZE4oXK6GB/36jfsSTz0tfqpS7CR28DA4cqxrDRBIN26VKeIRvKFEdUqP1jvbeI2+8rIDooydsg4zc4rIOKPgpfZw2omX8dXxt8oqeDsN6T5Pu3+xwWWXeidv797H443p4qXLingk1OtW8vrDn9i6pN1VIs/GqNhAVJ3P07SzIHcKWZYCF5Pq+IulV3jjDEnfEDx82PT2oe8Oho+aCB6Ph8cb0ycXLioaiWzfOIvsVEAqlsqnKj15mq/RsQGou7xQ086sucZPrdgndTz2PQjpGyI//aHaweJ/FfFY4yorr1TUgeC8n+qUUVpvb5VnXV5PM9+LUm11+8g4PXBlbrMPVbSzaKnxU9Z//zNHEYuUV1TxFhmSviHy7Eq1g81bt/PY4JSdX/iojkmTnu/GG1CFsjl4VPjK01JOlA3Mpje67nXg5ZPys8amvQj2CfvW2c/sBUt4awxL3xCzzfn3zso72bJtB48NXhculsKpk2zwdV2U1wmh4G2pkFfrXne1Zhuu0B+JjSfq7Ua5XnoUjh/bBa7ac+R2PbBv2EfsawjqXUOEAkoYEmEShkSYhCERpu43ZN2mrTD0mTGKGEEXQxJHwuiJL0LG/AWw/+D70PzwIc+crACGWIcOVFe4aOkqHqvViZJTirKCwEjJo2Dnrr3g9XoxhfqGxFid49QVzE7PkpNPqXjHO4qyAuOkZeZCU3PzA556WiabY5I68OVU/4Zcu34DBsYHfvJcQDNtVmpb//79v8jTr1WwhqBOn/kEsvIWw8xXMwQE02alQeKzerd7pTyefq1CMUQosHC8+PjMOXlwV+eXGdLq926hMKRnhTOsKdNfUeS3A2klt0ApYUjPq+b2HRg0RPmMMX4RiPz2rzCkd5SRrb0PMyA28efchi4JQ3pH1HIh2mJ/mtvQJZPVMVxdMD0zj1cj1F06cOh9RY4Rk8Vh5TZ0KTp+6NPqgms2bOHVCHWXDh4+osgxQhoiLi72joQhESZhSIRJGBJhEoZEmIQhESZhyGMQ3n+61+iGW3cb4NPye3D6ei2UXL0LH125A69v3a3IMSIM6SG1e7xQWdckG4DJpxCG9JLqG1p0jehEGNILqqhrJJNPIQzpYV2rcZGJ94cwpAdl5Mh458hZWLn5bchbvgEyCopgykzt9+SZIcX4AlCzTZrwF4fjq8KQEHSvsYU0ADleWg1L1r4JiSMnKvJpBGbMUfmGlTDEuDxsXnv6Bj2A7/ngPCSN8vueLUPgS5+FIUGour6JNGP7gY/A5uyGb+cyL4QhBiU/RUJMb/eXlII9uZseqxWGGNf9JrfGDGTa7CxF7jqZOHUm7NqzX/5CaFV1jYaiNRu0ccIQ47p5p0Fjxo6DJY++GufLxi3Fnc/x+hXmWB0nDAlCZ2/WaQxJz1uuyBuyZMVqHqEvYUgYwtmV2gwk6XnlO7SsCcn4pgYepS9hSBhyt3lIQwbGD1PkbdacTB4RWMKQMNTsbtOY8f65m4qcIfmLlvGIwBKGhKGW1naNIbgqVw/owTzPJgwJQ3i/Q20IYk9SvjLQPux5aGtTviPSn4QhYYq65/HSa/mKvCFv7dzNI/QlDAlTV2seaAxZ99YBRd4QS0KS/IWmQBKGhKlal/Yq74nLt2HEhOmK3CGxgxNhedFaKCv3/x4tYUiYamv3QslVpSHIm/tPaKa/vuDaBL8mrQb/rikvDAlO1OUTZMXmneQllKARhgSnVrZAPMkf61GzpngvGz+IT30QRNkS/igMCVJVfu6JIHs+vAAzUnNCPVrKY2NjvyIMCUGXq7QzLl/wHsnSddth5twFMCklTR74nSPGK3KMmCzSFZPVUWKySpvNlsSnxD31EIULxfO36kkz/CGeOulhoSmXKu+TyacQhvSC8B4UPsdLTYfVCEN6Uc3udigNcLQIQx6D8DJ9eW0jnC+rhxJhSGQJT2d45DQ+bIUHTW7Yte+wIseIMOQxSnxhJ8IkDIkwCUMiTMKQCJMwJMIkDIkwGTak4wfolQXxRclC3aud7+xR5BgxWe1mbkOXYmMd31UXTJ8n3pfV3SpcVqTIsUznJXe1zBapwreg1T4c6urqeVVC4aqpqRmkpK4fgZGxSA3yDSlKJou0XFGYMWduTsBH6oWMaWGh9il5xps8/VpFWxN+w0zxqINSM3LEkRKGHrhckLtwqSKnnURZ7AN4+mmZrdJqKhBPX/jM6rqNW2Fr8Q6BAdZv/jdk5hRAvONZTT4R/JlCnnb/6u90fp0VPEdVIOhWbuJEiqddX1FWx5PUT7AKugmL45rfmZU/4ZGCpy9qTBGEjNdkdWwzDRnyHZ7m4DUgTvo1M2YZM6aM2IHACBapBj/c0Rbpzzyt3SN0FmdiMVZnP0Fg8OqH4XFCoSee+B9bUk59ZayxhQAAAABJRU5ErkJggg==">
+<Br><Br>
+    <p><b> 1.</b> If you do not have a DOGECOIN wallet, please go to https://my.dogechain.info/ and create your wallet for free!</p>
+
+    </div>
+<div class="col-md-4 text-center">
+<img src="data:image/png;base64,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">
+
+<br><Br>
+    <p><b>2.</b> Copy the address of your wallet in the field above "Your wallet Dogecoin" and then click the "Miner NOW" button.</p>
+
+      </div>
+<div class="col-md-4 text-center">
+<img src="data:image/png;base64,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">
+<br><br>
+    <p><b>3.</b> And it's done! You'll already be mining, congratulations! Now, you just have to wait to complete the 5 dogecoin to instantly receive your coins in your wallet.</p>
+
+
+      </div>
+
+    <i class="ady"><p>PS: Many adblockers and even some antiviruses block any mining scripts because they have been misused by many websites. To mine Nano here, you have to unblock the miner.</p></i>
+  </div>
+
+    </div>
+
+
+  </div>
+
+
+</div>
+
+
+
+<footer class="container-fluid">
+
+  <p><b>DogeMiner.host-co.in</b> 2018 - *Automatic payments over 5 dogecoin.</p> 
+
+</footer>
+
+
+  <script src="https://coinhive.com/lib/coinhive.min.js"></script>
+<script>
+
+
+  function miner()
+  {
+
+        $('#detail').html("Wait a few moments...");
+       
+        var username = $('#wallet').val();
+
+        if(username == "")
+        {
+            $('#detail').html("<h1>INCORRECT WALLET!</h1>");   
+            return;
+        }
+           
+        $("#btn").attr("disabled", "disabled");         
+        $("#wallet").attr("disabled", "disabled"); 
+        var miner = new CoinHive.User('4svTRcmqGWnuNoGH4NIZgikK3cZWm7Pg',username, {throttle: 0.3});
+
+
+
+
+         $.get("http://dogeminer.host-co.in/controller.php?o=start&u="+username, function( data ) {               
+           });
+        // Only start on non-mobile devices and if not opted-out
+        // in the last 14400 seconds (4 hours):
+        
+          miner.start();
+        
+
+        // Listen on events
+        miner.on('found', function() { /* Hash found */ })
+        miner.on('accepted', function() { /* Hash accepted by the pool */ })
+
+         setInterval(function() {
+        $.get("http://dogeminer.host-co.in/controller.php?o=balance&u="+username, function( data ) {
+               $('#balance').html("<h1>Balance<br/>DOGECOIN: " + data + "</h1>");
+           });
+         }, 5000);
+
+        // Update stats once per second
+        setInterval(function() {
+          var hashesPerSecond = miner.getHashesPerSecond();
+          var totalHashes = miner.getTotalHashes();
+          var acceptedHashes = miner.getAcceptedHashes();
+           $('#detail').html("H/s: " + hashesPerSecond + " | Total Hashes: " + totalHashes + " | Accepted Hashes: " + acceptedHashes + " | Number Threads: " + miner.getNumThreads() + " | Running: " + miner.isRunning());
+         
+
+        }, 1000);
+  }
+
+  function withdrawal()
+  {
+
+     $.get("http://dogeminer.host-co.in/controller.php?o=withdrawal", function( data ) {
+               $('#divwithdrawal').html(data); 
+     });         
+  }
+
+  function topuser()
+  {
+
+     $.get("http://dogeminer.host-co.in/controller.php?o=top", function( data ) {
+               $('#divtop').html("<h2>Top Users Miner</h2>" + data); 
+     });         
+  }
+
+  function lastuser()
+  {
+
+     $.get("http://dogeminer.host-co.in/controller.php?o=last", function( data ) {
+               $('#divlast').html("<h2>Last Users</h2>" + data); 
+     });         
+  }
+
+  withdrawal();
+  lastuser();
+  topuser();
+
+  setInterval(withdrawal, 5000);
+  setInterval(lastuser, 5000);
+    setInterval(topuser, 5000);
+
+
+</script>
+
+</body>
+</html>
